@@ -19,19 +19,18 @@ int EnterC()
     cin >> numC;
     return numC;
 }
-int CalcOstatok(int A,int B,int C)
+int CalcOstatok(int nA,int nB,int nC)
 {
-    return (A - B) % C;
+    return (nA - nB) % nC;
 }
-int CalcCelayaPart(int num_a) 
+int CalcCelayaPart(int nA,int nB,int nC) 
 {
-    //разрабатывается Василенко А. - ветка branch_fun_5
+    return nA / (nB + nC);
 }
 
 int main() {
-    int A, B, C;
+    int A = 0, B = 0, C = 0;
     int choice;
-    double EnterNum;
 
     do {
         cout << "Task 1. Ввести целое число A" << endl;
@@ -39,24 +38,36 @@ int main() {
         cout << "Task 3. Ввести целое число C" << endl;
         cout << "Task 4. Найти остаток от деления разности чисел A и B на число C" << endl;
         cout << "Task 5. Найти целую часть от деления числа A на сумму чисел B и C" << endl;
-        cout << "Пожалуйста, введите число 0, если хотите закрыть приложение ";
+        cout << "Пожалуйста, введите число 0, если хотите закрыть приложение " << endl;
+        cout << "Введите номер задания : "
         cin >> choice;
 
         switch (choice) {
             case 1:
-                cout << "Введите ЦЕЛОЕ число A" << EnterA << endl;
+                cout << "Введите ЦЕЛОЕ число A: ";
+                A = EnterA(); 
                 break;
             case 2:
-                cout << "Введите ЦЕЛОЕ число B" << EnterB << endl;
+                cout << "Введите ЦЕЛОЕ число B: ";
+                B = EnterB(); 
                 break;
             case 3:
-                cout << "Введите ЦЕЛОЕ число C" << EnterC << endl;
+                cout << "Введите ЦЕЛОЕ число C: ";
+                C = EnterC(); 
                 break;
             case 4:
-                cout << "Остаток от деления (A - B) % C = " << CalcOstatok(A, B, C) << endl;
+                if (C != 0) { 
+                    cout << "Остаток от деления (A - B) % C = " << CalcOstatok(A, B, C) << endl;
+                } else {
+                    cout << "Ошибка: C не может быть равным нулю." << endl;
+                }
                 break;
             case 5:
-                cout << "Целая часть от деления A / (B + C) = " << CalcCelayaPart(A, B, C) << endl;
+                if (B + C != 0) { 
+                    cout << "Целая часть от деления A / (B + C) = " << CalcCelayaPart(A, B, C) << endl;
+                } else {
+                    cout << "Ошибка: B + C не может быть равным нулю." << endl;
+                }
                 break;
             case 0:
                 cout << "Выход из приложения." << endl;
