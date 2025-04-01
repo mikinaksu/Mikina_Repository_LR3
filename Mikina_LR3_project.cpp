@@ -16,9 +16,9 @@ double EnterC()
     int numC;
     cin >> numC;
 }
-double CalcOstatok(int num_a)
+double CalcOstatok(int A,int B,int C)
 {
-    //разрабатывается Петровым П. - ветка branch_fun_4
+    return (A - B) % C;
 }
 double CalcCelayaPart(int num_a) 
 {
