@@ -4,22 +4,24 @@ using namespace std;
 double EnterA()
 {
     //разрабатывается Ивановым П. - ветка branch_fun_1
+    int numA
+    cin >> numA;
 }
 double EnterB()
 {
-    //разрабатывается Ивановым П. - ветка branch_fun_1
+    //разрабатывается Ивановым П. - ветка branch_fun_2
 }
 double EnterC()
 {
-    //разрабатывается Ивановым П. - ветка branch_fun_1
+    //разрабатывается Ивановым П. - ветка branch_fun_3
 }
 double CalcOstatok(int num_a)
 {
-    //разрабатывается Петровым П. - ветка branch_fun_2
+    //разрабатывается Петровым П. - ветка branch_fun_4
 }
 double CalcCelayaPart(int num_a) 
 {
-    //разрабатывается Василенко А. - ветка branch_fun_3
+    //разрабатывается Василенко А. - ветка branch_fun_5
 }
 
 int main() {
