@@ -1,26 +1,29 @@
 #include <iostream>
 using namespace std;
 
-double EnterA()
+int EnterA()
 {
     int numA;
     cin >> numA;
+    return numA;
 }
-double EnterB()
+int EnterB()
 {
     int numB;
     cin >> numB;
+    return numB;
 }
-double EnterC()
+int EnterC()
 {
     int numC;
     cin >> numC;
+    return numC;
 }
-double CalcOstatok(int A,int B,int C)
+int CalcOstatok(int A,int B,int C)
 {
     return (A - B) % C;
 }
-double CalcCelayaPart(int num_a) 
+int CalcCelayaPart(int num_a) 
 {
     //разрабатывается Василенко А. - ветка branch_fun_5
 }
