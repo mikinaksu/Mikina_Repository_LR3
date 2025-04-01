@@ -3,17 +3,18 @@ using namespace std;
 
 double EnterA()
 {
-    //разрабатывается Ивановым П. - ветка branch_fun_1
-    int numA
+    int numA;
     cin >> numA;
 }
 double EnterB()
 {
-    //разрабатывается Ивановым П. - ветка branch_fun_2
+    int numB;
+    cin >> numB;
 }
 double EnterC()
 {
-    //разрабатывается Ивановым П. - ветка branch_fun_3
+    int numC;
+    cin >> numC;
 }
 double CalcOstatok(int num_a)
 {
